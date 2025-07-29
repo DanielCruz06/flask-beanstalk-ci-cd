@@ -41,5 +41,5 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: us-east-1
         EB_APPLICATION_NAME: flask-beanstalk
-        EB_ENVIRONMENT_NAME: flask-beanstalk-env
+        EB_ENVIRONMENT_NAME: FlaskBeanstalkEnv-env
         EB_BUCKET_NAME: flask-beanstalk-bucket
