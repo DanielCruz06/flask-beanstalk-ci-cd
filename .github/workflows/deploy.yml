@@ -25,12 +25,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # Install Elastic Beanstalk CLI
+    # Install EB CLI
     - name: Install EB CLI
       run: |
-        curl "https://d1vvhvl2y92vvt.cloudfront.net/aws-eb-cli/aws-eb-cli-linux-x86_64-2021-04-27.zip" -o "eb-cli.zip"
-        unzip eb-cli.zip -d eb-cli
-        sudo mv eb-cli/eb /usr/local/bin/
+        pip install awsebcli
         eb --version  # Verify installation
 
     # Configure AWS credentials and deploy to Elastic Beanstalk
