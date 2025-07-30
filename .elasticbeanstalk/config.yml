@@ -1,0 +1,9 @@
+branch-defaults:
+  main:
+    environment: FlaskBeanstalkEnv-env  # Nombre del entorno en Elastic Beanstalk
+global:
+  application_name: flaskBeanstalkEnv # Nombre de la aplicación en Elastic Beanstalk
+  default_platform: Python 3.9
+  default_region: us-east-1
+  profile: null
+  workspace_type: Application
