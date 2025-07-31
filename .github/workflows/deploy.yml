@@ -35,14 +35,11 @@ jobs:
     - name: Deploy to Elastic Beanstalk
       run: |
         eb init -p python-3.9 flask-beanstalk --region $AWS_REGION
-        eb deploy FlaskBeanstalkEnv-env
-        
+        eb deploy $EB_ENVIRONMENT_NAME
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: us-east-1
-        EB_APPLICATION_NAME: flaskBeanstalkEnv # Application name in Elastic Beanstalk
-        EB_ENVIRONMENT_NAME: FlaskBeanstalkEnv-env
+        EB_APPLICATION_NAME: flaskEb 
+        EB_ENVIRONMENT_NAME: FlaskEb-env
         EB_BUCKET_NAME: flask-beanstalk-bucket
-
-        # EB_ENVIRONMENT_NAME
