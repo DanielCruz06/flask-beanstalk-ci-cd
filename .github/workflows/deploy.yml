@@ -30,10 +30,10 @@ jobs:
     - name: Deploy to Elastic Beanstalk
       run: |
         eb init -p python-3.9 flaskci_cd_app --region us-east-1
-        eb deploy Flaskcicdapp-env1  # Nombre del entorno en AWS Elastic Beanstalk
+        eb deploy Flaskcicdappp-env
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: us-east-1
-        EB_APPLICATION_NAME: flaskci_cd_app
-        EB_ENVIRONMENT_NAME: Flaskcicdapp-env
+        EB_APPLICATION_NAME: flaskci_cd_appp
+        EB_ENVIRONMENT_NAME: Flaskcicdappp-env

@@ -1,9 +1,9 @@
 branch-defaults:
   main:
-    environment: Flaskcicdapp-env  # Nombre del entorno en Elastic Beanstalk
+    environment: Flaskcicdappp-env  # Nombre del entorno en Elastic Beanstalk
 global:
-  application_name: flaskci_cd_app # Nombre de la aplicación en Elastic Beanstalk
+  application_name: flaskci_cd_appp # Nombre de la aplicación en Elastic Beanstalk
   default_platform: Python 3.9
-  default_region: us-east-1ß
+  default_region: us-east-1
   profile: null
   workspace_type: Application
